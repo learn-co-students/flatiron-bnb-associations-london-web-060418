@@ -32,6 +32,7 @@ describe User do
     end
 
     context "as host" do
+
       it "has many listings" do
         expect(katie.listings).to include(listing)
       end
@@ -52,11 +53,13 @@ describe User do
       end
 
       it 'has many trips' do
+        reservation
         expect(logan.trips).to include(reservation)
       end
 
 
       it 'has written many reviews' do
+        review
         expect(logan.reviews).to include(review)
       end
     end
